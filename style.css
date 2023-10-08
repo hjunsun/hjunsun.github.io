@@ -131,7 +131,7 @@ i.fas, i.fab {
     opacity: 0;
 }
 
-.project-container {
+.project-container-left {
     display: flex; /* Flexbox를 사용하여 두 열을 나란히 배치합니다 */
     align-items: center; /* 세로 중앙 정렬 */
     justify-content: space-between; /* 두 열 사이에 공간을 만듭니다 */
@@ -139,7 +139,7 @@ i.fas, i.fab {
     height: auto;  /* 높이를 자동으로 설정하여 내용에 맞게 조절합니다 */
 }
 
-.project-info {
+.project-container-right {
     flex: 1; /* 두 열이 동일한 너비를 가지도록 합니다 */
     padding-right: 20px; /* 이미지와의 간격을 만듭니다 */
 }
