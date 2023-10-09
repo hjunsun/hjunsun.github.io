@@ -156,7 +156,7 @@ i.fas, i.fab {
     aspect-ratio: 1/0.5625; /* Set the aspect ratio to 1920:1080  */
 }
 
-.project-image:hover+.project-text {
+.project-image:hover + .project-text {
   opacity: 0.3;
 }
 
@@ -177,9 +177,7 @@ i.fas, i.fab {
 	opacity: 1;
 }
 
-.project-image:hover+.project-text {
-  opacity: 0.3;
-}
+
 
 
 /* 모바일 스타일 */
