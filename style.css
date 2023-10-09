@@ -168,6 +168,7 @@ i.fas, i.fab {
         line-height: 1.6;
 	transform: translate( -50%, -50% );
 	display: none;
+	font-size: 3rem;
 }
 
 .project-image:hover+.project-text {
