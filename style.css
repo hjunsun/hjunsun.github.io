@@ -167,7 +167,6 @@ i.fas, i.fab {
 	font-family: 'Montserrat', sans-serif;
         line-height: 1.6;
 	transform: translate( -50%, -50% );
-	color: red;
 }
 
 .project-image:hover + .project-text {
