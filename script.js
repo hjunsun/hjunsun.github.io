@@ -121,53 +121,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let lastCommand = "";
     
-    // Command input
-    const commandInput = document.getElementById('command-input');
-    if (commandInput) {
-        commandInput.addEventListener('keydown', function(e) {
-            console.log('Key down event detected:', e.key);
-            if (e.key === 'Enter') {
-                const command = e.target.value.trim();
-                const [action, value] = command.split(' ');
+    // text pop up
+    document.getElementById('trigger').addEventListener('click', function() {
+            document.getElementById('popup').style.display = 'block';
+    });
 
-                switch(action) {
-                    case 'rotate':
-                        rotationSpeed = parseFloat(value);
-                        break;
-                    case 'stop':
-                        rotationSpeed = 0;
-                        break;
-                    case 'disappear':
-                        disappearImage();
-                        break;
-                    case 'gogo':
-                        changeImageWithFade('images/cat.jpg');
-                        break;
-                    case 'yellow':
-                        changeImageWithFade('images/profile_yellow.jpg');
-                        break;
-                    case 'gray':
-                        changeImageWithFade('images/profile_gray.jpg');
-                        break;
-                    case 'pink':
-                        changeImageWithFade('images/profile_pink.jpg');
-                        break;
-                    case 'smile':
-                        changeImageWithFade('images/profile_smile.jpg');
-                        break;
-                    case 'selfie':
-                        changeImageWithFade('images/profile_selfie.jpg');
-                        break;
-                    default:
-                        console.log('Unknown command');
-                }
-
-                e.target.value = '';
-            } else if (e.key === 'ArrowUp') {
-                e.target.value = lastCommand;
-            }
-        });
-    } else {
-        console.error("Element with id 'command-input' not found");
+    function closePopup() {
+            document.getElementById('popup').style.display = 'none';
     }
+
+    
 });
