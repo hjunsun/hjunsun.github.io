@@ -156,6 +156,10 @@ i.fas, i.fab {
     aspect-ratio: 1/0.5625; /* Set the aspect ratio to 1920:1080  */
 }
 
+.project-image:hover+.project-text {
+  opacity: 0.3;
+}
+
 .project-image:hover {
   opacity: 0.2;
 }
@@ -169,7 +173,7 @@ i.fas, i.fab {
 	font-family: 'Montserrat', sans-serif;
         line-height: 1.6;
 	transform: translate( -50%, -50% );
-	color: red;
+	color: blue;
 	opacity: 1;
 }
 
