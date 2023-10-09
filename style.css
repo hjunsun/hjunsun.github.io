@@ -157,9 +157,6 @@ i.fas, i.fab {
 }
 
 
-.project-image:hover {
-  opacity: 0.2;
-}
 
 .project-text {
 	padding: 5px 10px;
@@ -171,11 +168,13 @@ i.fas, i.fab {
         line-height: 1.6;
 	transform: translate( -50%, -50% );
 	color: red;
-	display: none;
 }
 
 .project-image:hover + .project-text {
-  display: block;
+  color: blue;
+}
+.project-image:hover {
+  opacity: 0.2;
 }
 
 
