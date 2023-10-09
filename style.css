@@ -170,7 +170,7 @@ i.fas, i.fab {
 	color: blue;
 }
 
-.project-image:hover +.project-text {
+.project-image:hover+.project-text {
   color: red;
 }
 .project-image:hover {
