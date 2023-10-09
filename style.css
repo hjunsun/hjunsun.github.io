@@ -152,6 +152,11 @@ i.fas, i.fab {
     aspect-ratio: 1/0.5625; /* Set the aspect ratio to 1920:1080  */
 }
 
+.project-image.hover {
+  background-color: gold;
+  opacity: 1;
+}
+
 .overlay {
     position: absolute;
     top: 0;
@@ -164,10 +169,6 @@ i.fas, i.fab {
     text-align: center;
     opacity: 0;
     transition: opacity 0.5s;
-  }
-
-.project-item:hover .overlay {
-    opacity: 1;
   }
 
 
