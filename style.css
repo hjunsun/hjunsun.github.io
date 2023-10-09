@@ -169,7 +169,7 @@ i.fas, i.fab {
 	font-family: 'Montserrat', sans-serif;
         line-height: 1.6;
 	transform: translate( -50%, -50% );
-	opacity: 0;
+	opacity: 0.3;
 }
 
 .project-image:hover ~ .project-text {
