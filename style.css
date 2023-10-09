@@ -148,7 +148,9 @@ i.fas, i.fab {
 
 .project-image {
     max-width: 100%;
-    height: auto;
+    max-height: 100%;
+    width: 100%;
+    aspect-ratio: 1/0.5625; /* Set the aspect ratio to 1920:1080  */
 }
 
 /* 모바일 스타일 */
