@@ -172,7 +172,7 @@ i.fas, i.fab {
 	opacity: 1;
 }
 
-.project-image:hover ~ .project-text {
+.project-image:hover .project-text {
   opacity: 0.3;
 }
 
