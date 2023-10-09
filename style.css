@@ -157,7 +157,7 @@ i.fas, i.fab {
 }
 
 .project-image:hover + .project-text {
-  opacity: 0.3;
+  display: block;
 }
 
 .project-image:hover {
@@ -173,8 +173,8 @@ i.fas, i.fab {
 	font-family: 'Montserrat', sans-serif;
         line-height: 1.6;
 	transform: translate( -50%, -50% );
-	color: blue;
-	opacity: 1;
+	color: red;
+	display: none;
 }
 
 
