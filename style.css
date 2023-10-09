@@ -132,12 +132,18 @@ i.fas, i.fab {
 }
 
 .project-container-left {
-    display: flex; /* Flexbox를 사용하여 두 열을 나란히 배치합니다 */
-    align-items: center; /* 세로 중앙 정렬 */
-    justify-content: space-between; /* 두 열 사이에 공간을 만듭니다 */
-    margin-bottom: 20px;  /* 이미지와 아래 텍스트 간의 간격 확보 */
-    height: auto;  /* 높이를 자동으로 설정하여 내용에 맞게 조절합니다 */
+    display: grid;    /* css grid 사용 */
+    grid-template-columns: 40% 60%; /* 왼쪽 40%, 오른쪽 60% */
+    margin-top: 3rem;
 }
+
+/* .project-container-left { */
+/*    display: flex; /* Flexbox를 사용하여 두 열을 나란히 배치합니다 */ */
+/*    align-items: center; /* 세로 중앙 정렬 */ */
+/*    justify-content: space-between; /* 두 열 사이에 공간을 만듭니다 */ */
+/*    margin-bottom: 20px;  /* 이미지와 아래 텍스트 간의 간격 확보 */ */
+/*    height: auto;  /* 높이를 자동으로 설정하여 내용에 맞게 조절합니다 */ */
+/* } */
 
 .project-container-right {
     flex: 1; /* 두 열이 동일한 너비를 가지도록 합니다 */
