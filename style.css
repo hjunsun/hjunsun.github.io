@@ -164,7 +164,7 @@ i.fas, i.fab {
   opacity: 0.2;
 }
 
-.Project-text {
+.project-text {
 	padding: 5px 10px;
 	text-align: center;
 	position: absolute;
@@ -173,7 +173,7 @@ i.fas, i.fab {
 	font-family: 'Montserrat', sans-serif;
         line-height: 1.6;
 	transform: translate( -50%, -50% );
-	color: red;
+	color: green;
 	display: none;
 }
 
