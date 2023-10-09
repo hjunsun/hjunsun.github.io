@@ -168,6 +168,12 @@ i.fas, i.fab {
 	left: 50%;
 	font-family: 'Montserrat', sans-serif;
         line-height: 1.6;
+	transform: translate( -50%, -50% );
+	opacity: 0;
+}
+
+.project-text:hover {
+  opacity: 1;
 }
 
 
