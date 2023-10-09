@@ -154,7 +154,7 @@ i.fas, i.fab {
 
 .project-image:hover {
   background-color: gold;
-  opacity: 1;
+  opacity: 0.2;
 }
 
 .overlay {
