@@ -1,30 +1,26 @@
----
+about_md = """---
 layout: page
 title: About
+permalink: /about/
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+Hi, I’m **Joonsun Hwang**, a PhD student at Carnegie Mellon University in the Department of Civil and Environmental Engineering.
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+My research focuses on **Human-AI collaboration in infrastructure systems**, especially how to enhance decision-making, safety, and trust in high-risk domains like construction and nuclear energy. I integrate technologies such as **generative AI**, **knowledge graphs**, and **semantic modeling** to bridge gaps between human expertise and machine intelligence.
 
-There are currently two themes built on Poole:
+### Areas of Interest
+- Human-AI decision modeling
+- Infrastructure safety and maintenance
+- Generative AI in AEC (Architecture, Engineering, Construction)
+- Nuclear microreactors and regulatory mapping
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+You can learn more about my work through the [CV](/cv/) page or check out my recent publications on [Google Scholar](https://scholar.google.com/).
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+Feel free to reach out via [email](mailto:joonsunh@andrew.cmu.edu).
+"""
 
-## Setup
+about_path = "/mnt/data/about.md"
+with open(about_path, "w", encoding="utf-8") as f:
+    f.write(about_md)
 
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+about_path
