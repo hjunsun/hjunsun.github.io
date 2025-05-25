@@ -1,139 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joonsun Hwang</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+---
+layout: default
+title: Home
+---
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav id="navbar">
-        <ul>
-            <li class="menu-icon">
-                <i class="fas fa-bars"></i> 
-            </li>
-            <li><a href="#Introduction">Joonsun Hwang</a></li>
-            <li><a href="#research-interests">Research Interests</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#publication">Publication</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#vision">Experience</a></li>
-        </ul>
-    </nav>
+<h1>Joonsun Hwang</h1>
+<p>PhD Student, Carnegie Mellon University</p>
+<p>Email: joonsunh@andrew.cmu.edu</p>
+<p>Licensed Real Estate Agent · Certified Investment Manager · Research Assistant</p>
 
-    <div id="command-window">
-        <input type="text" id="command-input" placeholder="Enter command...">
-    </div>
+<h2>Education</h2>
+<ul>
+  <li><strong>PhD, Civil and Environmental Engineering</strong>, CMU (Jan 2025 – Present)</li>
+  <li><strong>MS, Civil and Environmental Engineering</strong>, CMU (Aug 2024 – Present)</li>
+  <li><strong>B.Arch., Seoul National University</strong> (2015 – 2020, Cum Laude)</li>
+</ul>
 
-    <section id="Introduction">
-        <h2>Joonsun Hwang</h2>
-        <div class="profile-container">
-            <img src="images/Profile.jpg" alt="Joonsun Hwang" class="profile-image" id="currentImage">
-            <img src="images/Profile.jpg" alt="Joonsun Hwang" class="profile-image hidden" id="nextImage">
-        </div>
-        <p>(Birth) 28th, September, 1996</p>
-        <p>(Mobile) +821093357596</p>
-        <p>(E-Mail) hjjunsun928@gmail.com</p>
-        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hjunsun@snu.ac.kr</p>
-        <p>(Address) 205-705, 58, Almata-gil, Dongjak-gu, Seoul, Republic of Korea(06942)</p>
-        <p>
-            <a href="mailto:hjjunsun928@gmail.com" title="Email me"><i class="fas fa-envelope fa-2x"></i></a>
-            <a href="https://github.com/hjunsun" target="_blank" title="GitHub"><i class="fab fa-github fa-2x"></i></a>
-            <a href="https://www.linkedin.com/in/joonsun-hwang-2764121a0" target="_blank" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
-        </p>
-    </section>
+<h2>Recent Publications</h2>
+<ul>
+  <li>Hwang, J., et al. (2025). Measuring Text-based Task Similarity... <em>(I3CE)</em></li>
+  <li>Xiong, R., Hwang, J., et al. (2024). Transforming AEC Workflows with Generative AI... <em>(AEI)</em></li>
+</ul>
 
+<hr />
 
-    <section id="Highlights">
-        <h2>Highlights</h2>
-        <h3><i class="fas fa-check"></i>Capstone Asset Management, Jun. 2023 ~ Today<div id="trigger" style="display:inline;">[Show Details]</div></h3>
-		<div id="popup" class="popup-container">
-       			<button onclick="closePopup()">Close</button>
-        		<p>Here is the popup text box content.</p>
-		</div>
-        <p>Alternative Inverstment Division 1, Associate</p>
-	<h3><i class="fas fa-check"></i>Republic of Korea Airforce, Mar. 2020. ~ May. 2023 </h3>
-        <p>ROK CBR Defense Command, Officer(First Lieutenant)</p>
-        <h3><i class="fas fa-check"></i>Savills Korea, Jan. 2020 ~ Feb. 2020 </h3>
-        <p>Industrial PM, Intern</p>
-        <h3><i class="fas fa-check"></i>DA Group Urban Design & Architecture, Jul. 2018 ~ Jul. 2018 </h3>
-        <p>Residential Design Team 1, Intern</p>
-        <h3><i class="fas fa-check"></i>Seoul National University Real Estate Club(SNUSRC), Sep. 2017 ~ Dec. 2017 </h3>
-        <p>Development Team 2, Member(20th generation)</p>
-        <h3><i class="fas fa-check"></i>Daewoo Engineering & Construction Student Ambassador, Sep. 2016 ~ Dec. 2016 </h3>
-        <p>Team 5, Supporter(13th generation)</p>
-    </section>
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+    {{ post.content }}
+  </div>
+  {% endfor %}
+</div>
 
-    <section id="education">
-        <h2>Education</h2>
-        <h3><i class="fas fa-check"></i>Seoul National University, Mar. 2015 ~ Feb. 2020 </h3>
-        <p>Bachelor of Architecture, GPA Total: 3.8/4.3(Cum Laude), GPA Major: 3.95/4.3</p>
-    </section>
-
-    <section id="awards">
-        <h2>Awards</h2>
-        <h3><i class="fas fa-check"></i>The 10th Anniversary of LH’s Founding Idea Competition, Oct. 2019 ~ Nov. 2019 </h3>
-        <p>Subject: Suggestion of senior-friendly measures to improve the environment of aged public rental (Winning) </p>
-        <h3><i class="fas fa-check"></i>The Synergy Architectural Design & MD Competition, Jul. 2019 ~ Aug, 2019 </h3>
-        <p>Subject: Provided outsourcing service to the host of The Synergy by planning the retail-building on Gwang-ju Cheomdan district, as festive shopping space utilizing skip floor and continuous hallway (Winning) </p>
-        <h3><i class="fas fa-check"></i>The 20th Anniversary of Real Estate 114's Founding Big Data Competition, Apr. 2019 ~ May. 2019 </h3>
-        <p>Subject: Analysis and Prospect of Real Estate Market through Classifying the Newtown Release Districts (Winning) </p>
-        <h3><i class="fas fa-check"></i>International Idea Competition for Urban Innovations of Unused Space in Seoul, Dec. 2018 ~ Feb. 2019 </h3>
-        <p>Subject: Retails and student residents plan for activating Jeongneung (Winning) </p>
-        <h3><i class="fas fa-check"></i>2018 Koramco Real Estate Challenge, Sep. 2018 ~ Oct. 2018 </h3>
-        <p>Subject: Provided the best use of the specific site concerning environmental-friendly as a view of the developer, which is Gwanak 2030 complex development plan (Winning)</p>
-    </section>
-    
-
-     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-container">
-            <div class="project-item">
-		<div class="project-image-text-wrap">
-                	<a href="">
-			<img src="images/Urban Design and Renovation.jpg" class="project-image">
-			<div class="project-text"><p>Urban Design and Renovation</p></div>
-			</a>
-		</div>
-		<div class="project-image-text-wrap">
-                	<a href="">
-			<img src="images/Urban Design and Renovation.jpg" class="project-image">
-			<div class="project-text"><p>Public and Community</p></div>
-			</a>
-		</div>
-		<div class="project-image-text-wrap">
-                	<a href="">
-			<img src="images/Design and Art.JPG" class="project-image">
-			<div class="project-text"><p>Design and Art</p></div>
-			</a>
-		</div>
-	    </div>
-            <div class="project-item">
-		<div class="project-image-text-wrap">
-                	<a href="">
-			<img src="images/Commercial and Real Estate.jpg" class="project-image">
-			<div class="project-text"><p>Commercial and Real Estate</p></div>
-			</a>
-		</div>
-		<div class="project-image-text-wrap">
-                	<a href="">
-			<img src="images/History and Research.jpg" class="project-image">
-			<div class="project-text"><p>History and Research</p></div>
-			</a>
-		</div>
-            </div>
-        </div>
-    </section>
-
-
-
-        
-    <script src="script.js" defer></script>
-</body>
-</html>
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
