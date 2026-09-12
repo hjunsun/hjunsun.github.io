@@ -1,48 +1,23 @@
-# hjunsun.github.io
+# Joonsun Hwang
 
-This is the personal academic website of **Joonsun Hwang**, hosted with GitHub Pages and built using the [Hyde](https://github.com/poole/hyde) Jekyll theme.
+PhD Student in Civil and Environmental Engineering at Carnegie Mellon University.
 
-## 🔧 Structure
+I am a research assistant in the HMHI Research Group, advised by Dr. Pingbo Tang. My research focuses on human–AI collaboration, operator knowledge, and digital twins in manufacturing and civil infrastructure.
 
-- `index.html` – Main page with CV summary and blog posts
-- `about.md` – About page
-- `cv.md` – Full curriculum vitae (optional)
-- `_posts/` – Jekyll blog posts
-- `_layouts/`, `_includes/` – Jekyll layout templates
-- `_config.yml` – Jekyll site settings
-- `Gemfile`, `Gemfile.lock` – Ruby gem dependencies
-- `CNAME` – (Optional) for custom domain
+## Education
 
-## ▶️ How to Run Locally
+- **Carnegie Mellon University** — PhD in Civil and Environmental Engineering, 2025–Present
+- **Carnegie Mellon University** — MS in Civil and Environmental Engineering, 2026
+- **Seoul National University** — Bachelor of Architecture, 2020, Cum Laude
 
-1. Install Ruby (3.1.x recommended) and Bundler  
-2. Clone the repository
+## Research
 
-```bash
-git clone https://github.com/your-username/hjunsun.github.io.git
-cd hjunsun.github.io
-```
+- Operator decision-making and tacit knowledge in manufacturing
+- Graph-based procedures and AI agents
+- Digital twins for maintenance and quality control
+- Adaptive learning and operator training
 
-3. Install dependencies
+## Contact
 
-```bash
-bundle install
-```
-
-4. Serve the site
-
-```bash
-bundle exec jekyll serve
-```
-
-5. Open `http://127.0.0.1:4000/` in your browser
-
-## 🪄 Customize
-
-- To change the sidebar: edit `_includes/sidebar.html`
-- To change site config: edit `_config.yml`
-- To add posts: create new `.md` files in `_posts/` (follow `YYYY-MM-DD-title.md` format)
-
-## 📄 License
-
-This project is MIT licensed.
+- Website: [hjunsun.github.io](https://hjunsun.github.io/)
+- Email: joonsunh@andrew.cmu.edu
