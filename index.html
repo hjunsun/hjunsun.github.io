@@ -6,18 +6,25 @@ title: Home
   <div class="profile-copy">
     <h1 id="hero-title">Joonsun Hwang</h1>
     <p class="position">PhD Student · Carnegie Mellon University</p>
-    <p>Civil and Environmental Engineering<br>HMHI Research Group · Advisor: Dr. Pingbo Tang</p>
-    <p>I study human–AI collaboration, operator knowledge, and digital twins in manufacturing and civil infrastructure.</p>
-    <div class="hero-links">{% include email.html %}</div>
+    <p class="affiliation">Civil and Environmental Engineering<br><a href="https://hmhi-lab.net/" target="_blank" rel="noopener noreferrer">HMHI Research Group</a> · Advisor: Dr. Pingbo Tang</p>
+    <p class="intro">I study human–AI collaboration, operator knowledge, and digital twins in manufacturing and civil infrastructure.</p>
+    <div class="hero-links">
+      {% include email.html %}
+      {% if site.author.linkedin %}<a class="profile-button" href="{{ site.author.linkedin | escape }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true" focusable="false"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.555V9h3.564zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/></svg>
+      </a>{% endif %}
+      <a class="profile-button" href="{{ site.author.github | escape }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 .297a12 12 0 0 0-3.793 23.385c.6.111.82-.261.82-.577v-2.234c-3.338.726-4.043-1.416-4.043-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.085 1.839 1.237 1.839 1.237 1.071 1.835 2.809 1.305 3.495.998.108-.776.419-1.305.762-1.605-2.665-.303-5.467-1.334-5.467-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.323 3.301 1.23a11.52 11.52 0 0 1 6.006 0c2.291-1.553 3.297-1.23 3.297-1.23.654 1.652.243 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.625-5.479 5.922.431.372.815 1.102.815 2.222v3.292c0 .319.216.694.825.576A12 12 0 0 0 12 .297z"/></svg>
+      </a>
+    </div>
   </div>
   <figure class="portrait"><img src="{{ '/public/joonsun-hwang.jpg' | relative_url }}" alt="Joonsun Hwang in front of an illuminated yellow sculpture" width="1600" height="1600" fetchpriority="high"></figure>
 </section>
-<section id="research"><div class="section-heading"><h2>Research</h2></div><div class="research-grid">
-<article class="research-card"><h3>Tacit knowledge and AI coaching</h3><p>Graph-grounded, human-aligned coaching agents that translate expert roll former operators’ knowledge into explainable guidance.</p><div class="card-bottom">Manufacturing Futures Institute<span>Sep 2026 — Present</span></div></article>
-<article class="research-card"><h3>Manufacturing operator decision-making</h3><p>Studying laser cutting machine configuration through machine logs, eye-tracking data, and think-aloud protocols.</p><div class="card-bottom">Autodesk Research Residency<span>May 2026 — Present</span></div></article>
-<article class="research-card"><h3>Cell therapy training</h3><p>Adaptive learning strategies to onboard new employees in cell therapy cleanroom operations, in collaboration with Elevate Bio.</p><div class="card-bottom">Manufacturing PA · Cell Therapy<span>Oct 2025 — Present</span></div></article>
-<article class="research-card"><h3>Digital twins for manufacturing</h3><p>Explainable digital twins for maintenance and quality control, reinforcement learning for roll former setup, and knowledge graphs for task similarity.</p><div class="card-bottom">Manufacturing PA · Building Materials<span>Nov 2024 — Present</span></div></article>
-</div><details><summary>Earlier research</summary><div class="past-grid"><article><h3>Textile manufacturing simulation</h3><p>Sensor-based assessment of sewing operations for the Textile Good Innovation Foundry, connecting vibration and acoustic data to cycle time analysis and needle status monitoring.</p><small>JAN 2025 — AUG 2026</small></article><article><h3>Generative AI in civil engineering</h3><p>Data collection, analysis, and interpretation on opportunities and risks of generative AI in AEC workflows, supported by the Block Center’s Future of Work program.</p><small>MAY — NOV 2024</small></article></div></details></section><section id="publications">
+<section id="research">
+  <div class="section-heading"><h2>Projects</h2></div>
+  {% include research-details.html %}
+</section>
+<section id="publications">
   <div class="section-heading"><h2>Publications</h2></div>
   <ol class="publications" reversed>
     <li><span class="publication-title">A Traceable AI-Agent Operation Framework Using Graph-Based Procedures in Nuclear Abnormal Scenario Simulation</span><br>Park, S., McComb, C., Xiao, J., <strong>Hwang, J.</strong>, and Tang, P. <span class="venue">18th International Conference on Probabilistic Safety Assessment and Management (PSAM 18)</span>, July 2026.</li>
@@ -30,35 +37,46 @@ title: Home
 <section id="background">
   <div class="section-heading"><h2>Education</h2></div>
   <ul class="education">
-    <li><strong>Carnegie Mellon University</strong><br>PhD in Civil and Environmental Engineering, Jan 2025–Present</li>
-    <li><strong>Carnegie Mellon University</strong><br>MS in Civil and Environmental Engineering, Aug 2024–May 2026</li>
-    <li><strong>Seoul National University</strong><br>Bachelor of Architecture, Mar 2015–Feb 2020 · Cum Laude</li>
+    <li><div><h3>Carnegie Mellon University</h3><p>PhD in Civil and Environmental Engineering</p></div><span class="entry-date">Jan 2025–Present</span></li>
+    <li><div><h3>Carnegie Mellon University</h3><p>MS in Civil and Environmental Engineering</p></div><span class="entry-date">Aug 2024–May 2026</span></li>
+    <li><div><h3>Seoul National University</h3><p>Bachelor of Architecture <span class="entry-note">· Cum Laude</span></p></div><span class="entry-date">Mar 2015–Feb 2020</span></li>
   </ul>
+  <details class="cv-details"><summary>Academic details &amp; coursework</summary>
+    <h3>Carnegie Mellon University</h3><p>College of Engineering · Pittsburgh, PA · GPA: 3.96/4.00</p>
+    <p>Deep Reinforcement Learning, Generative AI, Urban System Modeling, Human AI Interaction, Principles of Digital Twins, Introduction to Python Prototyping for Infrastructure Systems, Advanced Python for Infrastructure Systems, Data Management, Introduction to Machine Learning.</p>
+    <h3>Seoul National University</h3><p>College of Engineering · Seoul, South Korea · GPA: 3.70/4.00 · Cum Laude · Ranked 9th of 66 graduates</p>
+    <p>Building Technology, Building System, Building Structure Planning, Introduction to Construction Engineering and Management, Building Economics and Development, Design Computing, Mechanical and Electrical Systems for Building, Advanced Building Environmental Technology, Architectural Design Studio, Architecture Environmental Planning, Building Materials, Building Codes and Regulations, Architecture and Urban Design, Architectural Design Theory, Architecture and Society, Korean Architecture, Architecture and Urbanism of Seoul.</p>
+  </details>
 </section>
 <section id="experience">
   <div class="section-heading"><h2>Experience</h2></div>
-  <ul>
-    <li>Research Assistant, HMHI Research Group, Carnegie Mellon University · Aug 2024–Present</li>
-    <li>Associate, Capstone Asset Management · Jun 2023–Jul 2024</li>
-    <li>First Lieutenant (Civil Engineer), Republic of Korea Air Force · Mar 2020–May 2023</li>
-    <li>Intern, Savills Korea · Jan–Feb 2020</li>
-    <li>Intern, DA Group Urban Design & Architecture · Jul 2018</li>
-  </ul>
+  {% include career-details.html %}
 </section>
 <section id="teaching">
   <div class="section-heading"><h2>Teaching</h2></div>
   <h3>Carnegie Mellon University</h3>
   <ul>
-    <li>Project Management for Engineering and Construction — Teaching Assistant, Fall 2026 and Fall 2025</li>
-    <li>Infrastructure Management — Teaching Assistant, Spring 2025</li>
-    <li>Sustainable Engineering Principles — Grader, Fall 2024</li>
+    <li><div><h4>Project Management for Engineering and Construction</h4><p>Teaching Assistant · 33 students (2026), 50 students (2025)</p></div><span class="entry-date">Fall 2026 &amp; Fall 2025</span></li>
+    <li><div><h4>Infrastructure Management</h4><p>Teaching Assistant · 28 students</p></div><span class="entry-date">Spring 2025</span></li>
+    <li><div><h4>Sustainable Engineering Principles</h4><p>Grader · 39 students</p></div><span class="entry-date">Fall 2024</span></li>
+  </ul>
+  <h3 class="teaching-subheading">Independent Teaching</h3>
+  <ul>
+    <li><div><h4>Private Tutoring</h4><p>Math, physics, and chemistry · 8 high school students · Approximately 1,500 hours</p></div><span class="entry-date">Jan 2015–Nov 2019</span></li>
   </ul>
 </section>
 <section id="mentoring">
   <div class="section-heading"><h2>Mentoring</h2></div>
-  <h3>Summer Undergraduate Research Apprenticeship · Summer 2026</h3>
-  <ul><li>Luke Cogswell</li><li>Vera Zhou</li><li>Donna Ding</li><li>Soo-Yeon Kim</li></ul>
-  <h3>Independent Study · Spring 2026</h3>
-  <ul><li>Jingxuan Duan</li></ul>
+  <div class="mentoring-group">
+    <h3>Summer Undergraduate Research Apprenticeship</h3>
+    <p class="mentoring-term">Summer 2026</p>
+    <ul><li>Luke Cogswell</li><li>Vera Zhou</li><li>Donna Ding</li><li>Soo-Yeon Kim</li></ul>
+  </div>
+  <div class="mentoring-group">
+    <h3>Independent Study</h3>
+    <p class="mentoring-term">Spring 2026</p>
+    <ul><li>Jingxuan Duan</li></ul>
+  </div>
 </section>
+{% include cv-sections.html %}
 <section id="contact" class="contact"><div><h2>Contact</h2>{% include email.html %}<p>Civil and Environmental Engineering<br>Carnegie Mellon University · Pittsburgh, PA</p></div></section>

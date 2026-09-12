@@ -9,6 +9,8 @@ baseurl: ""
 author:
   name: Joonsun Hwang
   url: https://hjunsun.github.io
+  github: https://github.com/hjunsun
+  linkedin: https://www.linkedin.com/in/joon111
 plugins:
   - jekyll-feed
 exclude:

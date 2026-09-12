@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I’m Joonsun Hwang, a PhD student in Civil and Environmental Engineering at Carnegie Mellon University and a research assistant in the HMHI Research Group, advised by Dr. Pingbo Tang.
+I’m Joonsun Hwang, a PhD student in Civil and Environmental Engineering at Carnegie Mellon University and a research assistant in the <a href="https://hmhi-lab.net/" target="_blank" rel="noopener noreferrer">HMHI Research Group</a>, advised by Dr. Pingbo Tang.
 
 My research focuses on human–AI collaboration in manufacturing and civil infrastructure. I investigate how operators’ tacit knowledge can inform explainable digital twins, adaptive learning, and human-aligned coaching agents.
 
