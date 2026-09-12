@@ -8,7 +8,7 @@ title: Home
     <p class="position">PhD Student · Carnegie Mellon University</p>
     <p>Civil and Environmental Engineering<br>HMHI Research Group · Advisor: Dr. Pingbo Tang</p>
     <p>I study human–AI collaboration, operator knowledge, and digital twins in manufacturing and civil infrastructure.</p>
-    <div class="hero-links"><a href="mailto:joonsunh@andrew.cmu.edu">Email</a><a href="{{ '/public/Joonsun-Hwang-CV.docx' | relative_url }}" download>CV (DOCX)</a></div>
+    <div class="hero-links">{% include email.html %}</div>
   </div>
   <figure class="portrait"><img src="{{ '/public/joonsun-hwang.jpg' | relative_url }}" alt="Joonsun Hwang in front of an illuminated yellow sculpture" width="1600" height="1600" fetchpriority="high"></figure>
 </section>
@@ -61,4 +61,4 @@ title: Home
   <h3>Independent Study · Spring 2026</h3>
   <ul><li>Jingxuan Duan</li></ul>
 </section>
-<section id="contact" class="contact"><div><h2>Contact</h2><a class="email-link" href="mailto:joonsunh@andrew.cmu.edu">joonsunh@andrew.cmu.edu ↗</a><p>Civil and Environmental Engineering<br>Carnegie Mellon University · Pittsburgh, PA</p></div></section>
+<section id="contact" class="contact"><div><h2>Contact</h2>{% include email.html %}<p>Civil and Environmental Engineering<br>Carnegie Mellon University · Pittsburgh, PA</p></div></section>

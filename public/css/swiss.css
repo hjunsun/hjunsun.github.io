@@ -23,7 +23,11 @@ p { margin-bottom:16px; }
 .portrait { margin:0; }
 .portrait img { display:block; width:100%; height:auto; border-radius:8px; }
 .hero-links { display:flex; gap:24px; margin-top:22px; font-size:14px; }
-.hero-links a { border-bottom:1px solid var(--line); }
+.email-copy { display:inline-flex; flex-wrap:wrap; align-items:baseline; gap:6px 12px; }
+.email-button { padding:0; border:0; border-bottom:1px solid var(--line); background:none; color:var(--accent); font:inherit; cursor:pointer; user-select:text; }
+.email-button:hover { border-bottom-color:var(--accent); }
+.email-button:focus-visible { outline:2px solid var(--accent); outline-offset:5px; }
+.copy-status { color:var(--muted); font-size:12px; }
 main>section:not(.hero) { margin-top:44px; }
 .section-heading h2 { margin-bottom:22px; }
 .research-grid { display:grid; grid-template-columns:1fr 1fr; gap:26px 40px; }

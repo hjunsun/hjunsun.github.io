@@ -12,6 +12,7 @@ author:
 plugins:
   - jekyll-feed
 exclude:
+  - public/Joonsun-Hwang-CV.docx
   - README.md
   - hyde_readme.md
   - Gemfile
