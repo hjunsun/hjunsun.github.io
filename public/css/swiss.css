@@ -21,7 +21,7 @@ p { margin-bottom:16px; }
 .profile-copy>p { max-width:640px; }
 .position { color:var(--accent); margin-bottom:8px; }
 .portrait { margin:0; }
-.portrait img { display:block; width:100%; height:auto; }
+.portrait img { display:block; width:100%; height:auto; border-radius:8px; }
 .hero-links { display:flex; gap:24px; margin-top:22px; font-size:14px; }
 .hero-links a { border-bottom:1px solid var(--line); }
 main>section:not(.hero) { margin-top:44px; }
