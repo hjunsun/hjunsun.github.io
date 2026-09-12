@@ -3,8 +3,31 @@
 {% include head.html %}
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header wrap"><a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Joonsun Hwang home">JH<span class="accent">.</span></a><nav aria-label="Main navigation"><a href="{{ '/#research' | relative_url }}">Projects</a><a href="{{ '/#publications' | relative_url }}">Publications</a><a href="{{ '/#background' | relative_url }}">Background</a><a href="{{ '/#contact' | relative_url }}">Contact ↗</a></nav></header>
+<header class="site-header wrap">
+  <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Joonsun Hwang home">JH<span class="accent">.</span></a>
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="{{ '/#publications' | relative_url }}">Publications</a>
+    <a href="{{ '/#research' | relative_url }}">Projects</a>
+    <a href="{{ '/#background' | relative_url }}">Education</a>
+    <a href="{{ '/#teaching' | relative_url }}">Teaching</a>
+    <details class="nav-more">
+      <summary>More</summary>
+      <div class="nav-menu">
+        <a href="{{ '/#experience' | relative_url }}">Experience</a>
+        <a href="{{ '/#mentoring' | relative_url }}">Mentoring</a>
+        <a href="{{ '/#service' | relative_url }}">Fellowship &amp; Service</a>
+        <a href="{{ '/#awards' | relative_url }}">Awards &amp; Competitions</a>
+        <a href="{{ '/#scholarships' | relative_url }}">Scholarships</a>
+        <a href="{{ '/#skills' | relative_url }}">Technical Skills</a>
+        <a href="{{ '/#certifications' | relative_url }}">Certifications</a>
+      </div>
+    </details>
+    <a href="{{ '/#contact' | relative_url }}">Contact</a>
+  </nav>
+</header>
 <main id="main" class="wrap">{{ content }}</main>
 <footer class="site-footer wrap"><span>© {{ 'now' | date: '%Y' }} Joonsun Hwang</span><span>Pittsburgh, PA · USA</span><a href="#main">Back to top ↑</a></footer>
 <script src="{{ '/public/js/email.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+<script src="{{ '/public/js/navigation.js' | relative_url }}" defer></script>
+<script src="{{ '/public/js/face-swap.js' | relative_url }}" defer></script>
 </body></html>

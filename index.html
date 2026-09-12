@@ -18,11 +18,11 @@ title: Home
       </a>
     </div>
   </div>
-  <figure class="portrait"><img src="{{ '/public/joonsun-hwang.jpg' | relative_url }}" alt="Joonsun Hwang in front of an illuminated yellow sculpture" width="1600" height="1600" fetchpriority="high"></figure>
-</section>
-<section id="research">
-  <div class="section-heading"><h2>Projects</h2></div>
-  {% include research-details.html %}
+  <figure class="portrait" data-swap-src="{{ '/public/joonsun-face-swap.png' | relative_url }}">
+    <img class="portrait-original" src="{{ '/public/joonsun-hwang.jpg' | relative_url }}" alt="Joonsun Hwang in front of an illuminated yellow sculpture" width="1600" height="1600" fetchpriority="high" draggable="false">
+    <button class="face-drag" type="button" aria-label="Swap Kkumdori and Joonsun’s faces" aria-pressed="false"></button>
+    <span class="swap-status" role="status" aria-live="polite"></span>
+  </figure>
 </section>
 <section id="publications">
   <div class="section-heading"><h2>Publications</h2></div>
@@ -33,6 +33,10 @@ title: Home
     <li><span class="publication-title">Measuring Text-based Task Similarity to Enable Personalized Learning in Modular Construction: A Case Study in HVAC Product Manufacturing</span><br><strong>Hwang, J.</strong>, Jeon, K., and Tang, P. <span class="venue">International Conference on Computing in Civil Engineering</span>, 2025.</li>
     <li><span class="publication-title">Socio-Technical Assessment of Generative AI Integration in Architecture, Engineering, and Construction (AEC) Workflows: An Empirical Study Using O*NET Occupational Taxonomy</span><br>Xiong, R., Netser, Y., Tang, P., Li, B., and <strong>Hwang, J.</strong> <span class="venue">Advanced Engineering Informatics</span>, 2024.</li>
   </ol>
+</section>
+<section id="research">
+  <div class="section-heading"><h2>Projects</h2></div>
+  {% include research-details.html %}
 </section>
 <section id="background">
   <div class="section-heading"><h2>Education</h2></div>
