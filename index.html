@@ -2,74 +2,60 @@
 layout: default
 title: Home
 ---
-
-<h1>Joonsun Hwang</h1>
-<p>PhD Student, Carnegie Mellon University</p>
-<p>Email: joonsunh@andrew.cmu.edu · Mobile: (878)-834-9072</p>
-<p>Licensed Real Estate Agent · Certified Investment Manager · Engineer Architecture</p>
-
-<h2>Education</h2>
-<ul>
-  <li><strong>PhD, Civil and Environmental Engineering</strong>, Carnegie Mellon University (Jan 2025 – Present)</li>
-  <li><strong>MS, Civil and Environmental Engineering</strong>, Carnegie Mellon University (Aug 2024 – Present, GPA: 4.0/4.0)</li>
-  <li><strong>B.Arch., Seoul National University</strong> (2015 – 2020, Cum Laude, GPA: 3.7/4.0)</li>
-</ul>
-
-<h2>Recent Publications</h2>
-<ul>
-  <li>Hwang, J., Jeon, K., Tang, P. (2025, accepted). <em>Measuring Text-based Task Similarity...</em> International Conference on Computing in Civil Engineering</li>
-  <li>Xiong, R., Netser, Y., Tang, P., Li, B., Hwang, J. (2024). <em>Transforming AEC Workflows with Generative AI...</em> Advanced Engineering Informatics</li>
-</ul>
-
-<h2>Projects</h2>
-<ul>
-  <li>Modular HVAC Manufacturing – Research assistant project on task similarity using knowledge graph (2024–2025)</li>
-  <li>Generative AI in AEC – Research on risks and opportunities in AI workflows (2024)</li>
-</ul>
-
-<h2>Experience</h2>
-<ul>
-  <li><strong>Associate</strong>, Capstone Asset Management, Korea (2023–2024)</li>
-  <li><strong>First Lieutenant</strong>, ROK Air Force (2020–2023)</li>
-  <li><strong>Internships</strong> at Savills Korea and DA Group Architecture</li>
-</ul>
-
-<h2>Skills</h2>
-<ul>
-  <li><strong>Architecture tools</strong>: AutoCAD, Rhino, Grasshopper, Revit</li>
-  <li><strong>Programming</strong>: Python, C++, Visual Basic, SQL, JavaScript</li>
-  <li><strong>Other</strong>: QGIS, HTML/CSS, Adobe Suite</li>
-</ul>
-
-<hr />
-
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-    {{ post.content }}
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-meta"><span><i class="status-dot"></i> PHD STUDENT · CIVIL & ENVIRONMENTAL ENGINEERING</span><span>01 / INTRODUCTION</span></div>
+  <div class="hero-grid">
+    <div><h1 id="hero-title">Joonsun<br>Hwang<span class="red">.</span></h1><p class="hero-note">HUMAN EXPERTISE. MACHINE INTELLIGENCE.<br>SHARED UNDERSTANDING.</p></div>
+    <figure class="portrait"><img src="{{ '/public/joonsun-hwang.jpg' | relative_url }}" alt="Joonsun Hwang smiling in front of an illuminated yellow sculpture at night" width="1600" height="1600" fetchpriority="high"><figcaption>JOONSUN HWANG</figcaption></figure>
   </div>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+  <div class="hero-bottom"><span class="eyebrow">RESEARCHER & ENGINEER</span><div><h2>Connecting human expertise<br>with intelligent systems.</h2><p>I study how people and AI can work together to make better decisions in manufacturing and the built environment. My research brings operators’ tacit knowledge into explainable, human-aligned systems.</p><div class="hero-links"><a class="button" href="#research">Explore my research ↓</a><a class="text-link" href="{{ '/public/Joonsun-Hwang-CV.docx' | relative_url }}" download>Download CV ↗ <small>DOCX</small></a></div></div></div>
+</section>
+<div class="affiliation"><span>CARNEGIE MELLON UNIVERSITY</span><span>HMHI Research Group</span><span>Advisor · Dr. Pingbo Tang</span></div>
+<section id="research"><div class="section-heading"><span class="eyebrow">02 / RESEARCH</span><h2>Human knowledge.<br>Real-world systems.</h2></div><div class="research-grid">
+<article class="research-card"><div class="card-top"><span>01 — KNOWLEDGE & AI</span><span class="red">ONGOING</span></div><h3>Making tacit knowledge teachable.</h3><p>Graph-grounded, human-aligned coaching agents that translate expert roll former operators’ knowledge into explainable guidance.</p><div class="card-bottom">Manufacturing Futures Institute<span>Sep 2026 — Present</span></div></article>
+<article class="research-card"><div class="card-top"><span>02 — DECISION-MAKING</span><span class="red">ONGOING</span></div><h3>Understanding the operator’s decisions.</h3><p>Studying laser cutting machine configuration through machine logs, eye-tracking data, and think-aloud protocols.</p><div class="card-bottom">Autodesk Research Residency<span>May 2026 — Present</span></div></article>
+<article class="research-card"><div class="card-top"><span>03 — ADAPTIVE LEARNING</span><span class="red">ONGOING</span></div><h3>Learning for complex manufacturing.</h3><p>Adaptive learning strategies to onboard new employees in cell therapy cleanroom operations, in collaboration with Elevate Bio.</p><div class="card-bottom">Manufacturing PA · Cell Therapy<span>Oct 2025 — Present</span></div></article>
+<article class="research-card"><div class="card-top"><span>04 — DIGITAL TWINS</span><span class="red">ONGOING</span></div><h3>Connecting expertise and production data.</h3><p>Explainable digital twins for maintenance and quality control, reinforcement learning for roll former setup, and knowledge graphs for task similarity.</p><div class="card-bottom">Manufacturing PA · Building Materials<span>Nov 2024 — Present</span></div></article>
+</div><details><summary>Earlier research <span>02 PROJECTS +</span></summary><div class="past-grid"><article><h3>Textile manufacturing simulation</h3><p>Sensor-based assessment of sewing operations for the Textile Good Innovation Foundry, connecting vibration and acoustic data to cycle time analysis and needle status monitoring.</p><small>JAN 2025 — AUG 2026</small></article><article><h3>Generative AI in civil engineering</h3><p>Data collection, analysis, and interpretation on opportunities and risks of generative AI in AEC workflows, supported by the Block Center’s Future of Work program.</p><small>MAY — NOV 2024</small></article></div></details></section><section id="publications">
+  <div class="section-heading"><span class="eyebrow">03 / PUBLICATIONS</span><h2>Research in print.</h2></div>
+  <ol class="publications" reversed>
+    <li><span class="publication-title">Human and AI Decision-Making under Multi-objective Scenarios in Demand-Driven Building Product Manufacturing</span><br><strong>Hwang, J.</strong>, Jeon, K., and Tang, P. <span class="venue">International Conference on Computing in Civil Engineering</span>, 2026.</li>
+    <li><span class="publication-title">Measuring Text-based Task Similarity to Enable Personalized Learning in Modular Construction: A Case Study in HVAC Product Manufacturing</span><br><strong>Hwang, J.</strong>, Jeon, K., and Tang, P. <span class="venue">International Conference on Computing in Civil Engineering</span>, 2025.</li>
+    <li><span class="publication-title">Socio-Technical Assessment of Generative AI Integration in Architecture, Engineering, and Construction (AEC) Workflows: An Empirical Study Using O*NET Occupational Taxonomy</span><br>Xiong, R., Netser, Y., Tang, P., Li, B., and <strong>Hwang, J.</strong> <span class="venue">Advanced Engineering Informatics</span>, 2024.</li>
+  </ol>
+</section>
+<section id="background">
+  <div class="section-heading"><span class="eyebrow">04 / EDUCATION</span><h2>Across disciplines.</h2></div>
+  <ul class="education">
+    <li><strong>Carnegie Mellon University</strong><br>PhD in Civil and Environmental Engineering, Jan 2025–Present</li>
+    <li><strong>Carnegie Mellon University</strong><br>MS in Civil and Environmental Engineering, Aug 2024–May 2026</li>
+    <li><strong>Seoul National University</strong><br>Bachelor of Architecture, Mar 2015–Feb 2020 · Cum Laude</li>
+  </ul>
+</section>
+<section id="experience">
+  <div class="section-heading"><span class="eyebrow">05 / EXPERIENCE</span><h2>Research & practice.</h2></div>
+  <ul>
+    <li>Research Assistant, HMHI Research Group, Carnegie Mellon University · Aug 2024–Present</li>
+    <li>Associate, Capstone Asset Management · Jun 2023–Jul 2024</li>
+    <li>First Lieutenant (Civil Engineer), Republic of Korea Air Force · Mar 2020–May 2023</li>
+    <li>Intern, Savills Korea · Jan–Feb 2020</li>
+    <li>Intern, DA Group Urban Design & Architecture · Jul 2018</li>
+  </ul>
+</section>
+<section id="teaching">
+  <div class="section-heading"><span class="eyebrow">06 / TEACHING</span><h2>Knowledge, shared.</h2></div>
+  <h3>Carnegie Mellon University</h3>
+  <ul>
+    <li>Project Management for Engineering and Construction — Teaching Assistant, Fall 2026 and Fall 2025</li>
+    <li>Infrastructure Management — Teaching Assistant, Spring 2025</li>
+    <li>Sustainable Engineering Principles — Grader, Fall 2024</li>
+  </ul>
+</section>
+<section id="mentoring">
+  <div class="section-heading"><span class="eyebrow">07 / MENTORING</span><h2>Learning together.</h2></div>
+  <h3>Summer Undergraduate Research Apprenticeship · Summer 2026</h3>
+  <ul><li>Luke Cogswell</li><li>Vera Zhou</li><li>Donna Ding</li><li>Soo-Yeon Kim</li></ul>
+  <h3>Independent Study · Spring 2026</h3>
+  <ul><li>Jingxuan Duan</li></ul>
+</section>
+<section id="contact" class="contact"><span class="eyebrow">08 / CONTACT</span><div><h2>Let’s exchange<br>ideas<span class="red">.</span></h2><a class="email-link" href="mailto:joonsunh@andrew.cmu.edu">joonsunh@andrew.cmu.edu ↗</a><p>Civil and Environmental Engineering<br>Carnegie Mellon University · Pittsburgh, PA</p></div></section>
