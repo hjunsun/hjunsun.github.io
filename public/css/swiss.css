@@ -64,12 +64,12 @@ summary { cursor:pointer; color:var(--accent); font-size:16px; font-weight:600; 
 small { color:var(--muted); font-size:14px; }
 /* Native reversed-list numbering follows the actual number of publications. */
 .publications { list-style:decimal; padding-left:26px; margin:0; }
-.publications li { display:list-item; padding:22px 0 22px 12px; margin:0; font-size:16px; line-height:1.8; color:var(--muted); }
+.publications li { display:list-item; padding:12px 0 12px 12px; margin:0; font-size:14px; line-height:1.55; color:var(--muted); }
 .publications li:first-child { padding-top:0; }
 .publications li:last-child { padding-bottom:0; }
 .publications strong { color:var(--ink); }
-.publications li::marker { color:var(--muted); font-size:16px; }
-.publication-title { display:inline-block; color:var(--ink); font-size:17px; font-weight:600; line-height:1.5; margin-bottom:8px; }
+.publications li::marker { color:var(--muted); font-size:14px; }
+.publication-title { display:inline-block; color:var(--ink); font-size:16px; font-weight:600; line-height:1.45; margin-bottom:4px; }
 .venue { color:var(--accent); font-style:italic; }
 #background>ul,#experience>ul,#teaching>ul { padding:0; list-style:none; margin:0; }
 #background>ul>li,#experience>ul>li,#teaching>ul>li { display:flex; justify-content:space-between; align-items:baseline; gap:24px; padding:18px 0; font-size:16px; }
@@ -97,6 +97,9 @@ small { color:var(--muted); font-size:14px; }
 .skills-list dd { margin:0; font-size:16px; color:var(--muted); }
 #teaching>h3 { margin:0 0 22px; color:var(--accent); font-size:21px; font-weight:600; line-height:1.4; }
 #teaching>.teaching-subheading { margin-top:40px; }
+.teaching-category { margin:0 0 16px; color:var(--muted); font-size:14px; font-weight:600; }
+.mentoring-category { margin-top:28px; }
+#teaching>.mentoring-group { margin-left:18px; }
 #teaching>ul { padding-left:18px; }
 .career-list .entry-details { color:var(--ink); margin-top:14px; }
 .career-more { margin-top:10px; }
@@ -119,7 +122,7 @@ small { color:var(--muted); font-size:14px; }
 .toggle-body p { margin:0 0 12px; }
 .toggle-body p:last-child { margin-bottom:0; }
 .toggle-body .entry-details { margin-top:0; }
-#experience>.career-list>li,#awards>.cv-entries>li { display:block; padding:0; }
+#experience>.career-list>li,#awards>.cv-entries>li:has(>details) { display:block; padding:0; }
 .project-list .entry-toggle + .entry-toggle { margin-top:8px; }
 @media(max-width:700px) {
   .entry-toggle>summary { display:grid; grid-template-columns:minmax(0,1fr) 20px; gap:5px 12px; }
@@ -128,7 +131,7 @@ small { color:var(--muted); font-size:14px; }
   .toggle-body { padding-right:0; }
 }
 .mentoring-group + .mentoring-group { margin-top:28px; }
-.mentoring-group h3 { margin:0 0 4px; font-size:17px; font-weight:600; }
+.mentoring-group h5 { margin:0 0 4px; font-size:16px; font-weight:600; line-height:1.4; }
 .mentoring-term { margin:0 0 12px; color:var(--muted); font-size:14px; }
 .mentoring-group ul { margin:0; padding-left:20px; font-size:16px; color:var(--muted); }
 .mentoring-group li { padding-left:2px; margin-bottom:4px; }
