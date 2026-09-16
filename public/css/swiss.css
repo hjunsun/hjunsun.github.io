@@ -101,7 +101,11 @@ small { color:var(--muted); font-size:14px; }
 .mentoring-category { margin-top:28px; }
 #teaching>.mentoring-group { margin-left:18px; }
 #teaching>ul { padding-left:18px; }
-.career-list .entry-details { color:var(--ink); margin-top:14px; }
+.project-list .entry-details,.career-list .entry-details { list-style:disc outside; padding-left:20px; color:var(--muted); font-size:16px; line-height:1.7; }
+.project-list .entry-details>li,.career-list .entry-details>li { padding-left:2px; margin:0 0 6px; }
+.project-list .entry-details>li:last-child,.career-list .entry-details>li:last-child { margin-bottom:0; }
+.project-list .entry-details>li::marker,.career-list .entry-details>li::marker { color:var(--muted); font-size:.8em; }
+.project-topic { margin:0 0 10px; color:var(--ink); font-size:16px; font-weight:600; line-height:1.5; }
 .career-more { margin-top:10px; }
 .career-more summary { padding-block:6px; font-size:14px; }
 .career-more .entry-details { margin-top:6px; }
@@ -130,9 +134,10 @@ small { color:var(--muted); font-size:14px; }
   .entry-toggle>summary>.toggle-icon { grid-column:2; grid-row:1; }
   .toggle-body { padding-right:0; }
 }
-.mentoring-group + .mentoring-group { margin-top:28px; }
+.mentoring-group + .mentoring-group { margin-top:8px; }
 .mentoring-group h5 { margin:0 0 4px; font-size:16px; font-weight:600; line-height:1.4; }
-.mentoring-term { margin:0 0 12px; color:var(--muted); font-size:14px; }
+.mentoring-count { color:var(--muted); font-size:14px; font-weight:400; white-space:nowrap; }
+.mentoring-group .entry-toggle>summary:hover h5 { color:var(--accent); }
 .mentoring-group ul { margin:0; padding-left:20px; font-size:16px; color:var(--muted); }
 .mentoring-group li { padding-left:2px; margin-bottom:4px; }
 .mentoring-group li::marker { color:var(--muted); }
